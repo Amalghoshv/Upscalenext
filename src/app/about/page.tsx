@@ -1,6 +1,7 @@
 
 import type { Metadata } from 'next'
-import About from "@/app/components/about"
+import About from "@/app/components/About"
+
 
 export const metadata: Metadata = {
   title: 'About Us | Upscalenext',
@@ -13,5 +14,5 @@ export const metadata: Metadata = {
 }
 
 export default function AboutPage() {
-  return <About />
+  return <About/>
 }
