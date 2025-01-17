@@ -69,7 +69,7 @@ const Contact = () => {
                     <div className="space-y-2">
                         <h3 className="text-2xl font-semibold text-gray-600">Get in Touch</h3>
                         <p className="text-gray-600">
-                            Have questions about our ERPNext solutions? We had  love to hear from you. Send us a message, and we will respond as soon as possible.
+                        Have questions about our ERPNext solutions? We&apos;d love to hear from you. Send us a message, and we will respond as soon as possible.
                         </p>
                         <div className="space-y-4">
                             <p className="flex items-center text-gray-600">
