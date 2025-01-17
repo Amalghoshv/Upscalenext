@@ -1,12 +1,12 @@
-// src/app/about/page.tsx
+
 import type { Metadata } from 'next'
-import About from '@/components/about'
+import About from "@/app/components/about"
 
 export const metadata: Metadata = {
-  title: 'About Us | TechForge',
+  title: 'About Us | Upscalenext',
   description: 'Learn about our young, dynamic team of ERPNext experts',
   openGraph: {
-    title: 'About Us | TechForge',
+    title: 'About Us | Upscalenext',
     description: 'Learn about our young, dynamic team of ERPNext experts',
     images: ['/images/about-og.jpg'],
   },
