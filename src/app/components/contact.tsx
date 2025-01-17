@@ -36,7 +36,6 @@ const Contact = () => {
         }
 
         if (form.current) {
-            const formData = new FormData(form.current);
             emailjs
                 .sendForm(
                     serviceId,
