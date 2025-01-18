@@ -97,7 +97,6 @@ const Contact = () => {
                             alt="contact-img"
                         />
                     </div>
-
                     <form ref={form} onSubmit={sendEmail} className="space-y-6 bg-white p-8 rounded-lg shadow-lg">
                         <div className="space-y-2">
                             <label htmlFor="user_name" className="block text-sm font-medium text-gray-700">Your Name</label>
@@ -106,7 +105,7 @@ const Contact = () => {
                                 type="text"
                                 name="from_name"
                                 placeholder="Name"
-                                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
+                                className="w-full text-gray-600 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:text-gray-800 transition-all"
                                 required
                             />
                         </div>
@@ -117,7 +116,18 @@ const Contact = () => {
                                 type="email"
                                 name="user_email"
                                 placeholder="user@example.com"
-                                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
+                                className="w-full p-3 border text-gray-600 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:text-gray-800 transition-all"
+                                required
+                            />
+                        </div>
+                        <div className="space-y-2">
+                            <label htmlFor="user_phone" className="block text-sm font-medium text-gray-700">Your Phone</label>
+                            <input
+                                id="user_phone"
+                                type="phone"
+                                name="user_phone"
+                                placeholder="+91 1234567890"
+                                className="w-full p-3 border text-gray-600 border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:text-gray-800 transition-all"
                                 required
                             />
                         </div>
@@ -128,7 +138,7 @@ const Contact = () => {
                                 name="message"
                                 placeholder="Your message here"
                                 rows={4}
-                                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
+                                className="w-full p-3 border border-gray-300  text-gray-600 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 focus:text-gray-800 transition-all"
                                 required
                             />
                         </div>
@@ -144,6 +154,7 @@ const Contact = () => {
                             </div>
                         )}
                     </form>
+                    
                 </div>
             </div>
         </section>
