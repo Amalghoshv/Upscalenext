@@ -11,6 +11,9 @@ export const metadata: Metadata = {
     template: '%s | UpscaleNext',
     default: 'UpscaleNext - ERPNext Solutions',
   },
+  icons: {
+    icon: '/favicon.png',
+  },
   description: 'Professional ERPNext implementation and customization services',
   openGraph: {
     title: 'UpscaleNext - ERPNext Solutions',
@@ -47,6 +50,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+       <head>
+        <link rel="icon" href="/favicon.png" />
+      </head>
       <body className={inter.className}>
         <Nav />
         <main>{children}</main>
