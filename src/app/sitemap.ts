@@ -1,4 +1,4 @@
-// src/app/sitemap.ts
+
 import { MetadataRoute } from 'next'
  
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -15,6 +15,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
-    // Add other routes
+    {
+        url: 'https://www.upscalenext.cloud/contact',
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: 0.8,
+        },
+        {
+        url: 'https://www.upscalenext.cloud/projects',
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: 0.8,
+    }
+    
   ]
 }
