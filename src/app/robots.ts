@@ -1,13 +1,11 @@
+import { MetadataRoute } from 'next'
 
-export default function robots() {
-    return {
-      rules: [
-        {
-          userAgent: '*',
-          allow: '/',
-          disallow: ['/private/', '/admin/'],
-        },
-      ],
-      sitemap: 'https://www.upscalenext.cloud/sitemap.xml',
-    }
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: {
+      userAgent: '*',
+      allow: '/',
+    },
+    sitemap: 'https://www.upscalenext.cloud/sitemap.xml',
   }
+}
