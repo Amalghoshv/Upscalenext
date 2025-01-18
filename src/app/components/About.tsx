@@ -28,7 +28,7 @@ const About = () => (
                         </div>
                         <div>
                             <p className="text-gray-600">
-                                We're dedicated to transforming businesses through cutting-edge
+                                We are dedicated to transforming businesses through cutting-edge
                                 ERPNext solutions, making enterprise resource planning accessible
                                 and efficient for companies of all sizes.
                             </p>
