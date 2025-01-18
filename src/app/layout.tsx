@@ -4,7 +4,7 @@ import './globals.css'
 import Nav from '@/app/components/nav'
 import Footer from '@/app/components/footer'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] ,display: 'swap'})
 
 export const metadata: Metadata = {
   title: 'Upscalenext - ERPNext Solutions',
