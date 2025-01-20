@@ -37,7 +37,7 @@ const Nav = () => {
         {/* Mobile menu */}
         {isOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1">
+            <div className="px-2 pt-2 pb-3 space-y-1 text-center">
               {['Home', 'About', 'Projects', 'Why Us', 'Contact'].map((item) => (
                 <a
                   key={item}

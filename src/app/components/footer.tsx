@@ -35,6 +35,7 @@ const Footer = () => (
             <div className="space-y-2 text-gray-400">
               <p>Email: upscalenext@gmail.com</p>
               <p>Phone: +91 7025732665</p>
+              <p>Phone: +91 8943248736</p>
               
             </div>
           </div>
