@@ -13,13 +13,13 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
     <div className="relative bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
       {/* SVG Background Pattern */}
       <div 
-        className="absolute inset-0 opacity-80" 
+        className="absolute inset-0 opacity-80 service-card-background" 
         style={{
           backgroundImage: 'url(/blob1.svg)',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',
-          objectFit: 'cover'
+          objectFit: 'cover' 
         }}
       />
       

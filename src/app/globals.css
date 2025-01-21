@@ -19,3 +19,10 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+.service-card-background {
+  mix-blend-mode: multiply;
+}
+
+.footer-background {
+  mix-blend-mode: soft-light;
+}
