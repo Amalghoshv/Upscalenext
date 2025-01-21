@@ -10,7 +10,7 @@ const Nav = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <span className="text-2xl font-bold text-blue-600  flex">UPSCALENEXT<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#0890f7" d="M17 16V7H8V5h11v11zm-5 5v-9H3v-2h11v11z"/></svg></span>
+            <span className="text-2xl font-bold text-blue-800  flex">UPSCALENEXT<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#0890f7" d="M17 16V7H8V5h11v11zm-5 5v-9H3v-2h11v11z"/></svg></span>
           </div>
           
           {/* Mobile menu button */}
