@@ -88,7 +88,7 @@ const Contact = () => {
                         </div>
                         <img
                             className="-mt-[20%] h-2/3 bg-no-repeat bg-center bg-contain"
-                            src="./images/contact.svg"
+                            src="./images/contact.gif"
                             alt="contact-img"
                         />
                     </div>
