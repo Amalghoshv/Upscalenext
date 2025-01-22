@@ -5,8 +5,8 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          {/* Set favicon to logo.png */}
-          <link rel="icon" href="/logo.png" type="image/png" />
+        
+          <link rel="icon" href="/favicon.png" type="image/png" />
         </Head>
         <body>
           <Main />

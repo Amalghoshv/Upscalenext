@@ -1,4 +1,4 @@
-// components/Projects.tsx
+
 import { FC } from 'react';
 
 interface Project {
