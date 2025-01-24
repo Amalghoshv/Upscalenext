@@ -3,7 +3,7 @@ import React from 'react';
 import { Settings, Code2, Server, Globe } from 'lucide-react';
 import ServiceCard from './ServiceCard';
 import { Service } from '../types';
-import { motion, useInView } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 
 const Services: React.FC = () => {
