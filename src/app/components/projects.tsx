@@ -15,37 +15,37 @@ const Projects: FC = () => {
       title: 'Logistics Management',
       description: 'Managed logistics operations with custom ERPNext modules',
       tech: ['ERPNext', 'Custom Modules', 'API Integration'],
-      bg:'/logistics.svg' // Note the leading slash
+      bg:'/logistics.svg' 
     },
     {
       title: 'HR & Payroll System with Biometrics',
       description: 'Integrated HR and payroll system with biometric attendance',
       tech: ['ERPNext', 'HR', 'Payroll', 'Biometrics'],
-      bg:'/fingerprint.svg' // Note the leading slash
+      bg:'/fingerprint.svg'
     },
     {
       title: 'Retail Management System',
       description: 'Developed a custom retail management system for a chain of stores',
       tech: ['ERPNext', 'Sales', 'Custom Reports'],
-      bg:'/retail.svg' // Note the leading slash
+      bg:'/retail.svg' 
     },
     {
       title: 'KSA ZATCA Integration - Phase 1 & 2',
       description: 'Integrated ERPNext with KSA ZATCA for VAT compliance',
       tech: ['ERPNext', 'Tax', 'Custom Reports'],
-      bg:'/integration.svg' // Note the leading slash
+      bg:'/integration.svg' 
     },
     {
       title: 'Customized Themes - ERPNext',
       description: 'Developed custom themes for ERPNext for a better user experience',
       tech: ['ERPNext', 'Theme', 'Customization'],
-      bg:'/themes.svg' // Note the leading slash
+      bg:'/themes.svg' 
     },
     {
       title: 'Property Management System',
       description: 'Developed a custom property management system for a real estate company',
       tech: ['ERPNext', 'Dashboard', 'Customization'],
-      bg:'/property.svg' // Note the leading slash
+      bg:'/property.svg' 
     }
   ];
 
@@ -114,14 +114,16 @@ const Projects: FC = () => {
                 className="absolute inset-0 bg-no-repeat 
                            md:bg-right-bottom 
                            md:bg-[length:47%]
+                           sm:bg-[length:25%]
+                           max-sm:bg-[length:27%]
                            max-md:bg-contain max-md:bg-bottom-right
                            opacity-50 group-hover:opacity-100 
                            transition-opacity duration-300 ease-in-out 
                            mix-blend-multiply" 
                 style={{
                   backgroundImage: `url(${project.bg})`,
-                  backgroundPositionX: 'calc(100% - 20px)', // Adjust horizontal position for larger screens
-                  backgroundPositionY: 'calc(100% - 20px)'  // Adjust vertical position for larger screens
+                  backgroundPositionX: 'calc(100% - 10px)', // Adjust horizontal position for larger screens
+                  backgroundPositionY: 'calc(100% - 10px)'  // Adjust vertical position for larger screens
                 }} 
               />
                 
