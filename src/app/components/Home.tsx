@@ -1,4 +1,5 @@
-// src/components/header.tsx
+"use client"
+
 import Image from 'next/image'
 
 export default function Home() {
@@ -13,7 +14,11 @@ export default function Home() {
             Empowering businesses with cutting-edge ERPNext implementations
             and expert consulting services
           </p>
-          <button className="bg-blue-800 text-white px-6 md:px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors">
+          <button onClick={() => {
+              window.location.href = '/contact'
+            }} className="bg-blue-800 text-white px-6 md:px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors">
+            
+            
             Lets Discuss
           </button>
         </div>
