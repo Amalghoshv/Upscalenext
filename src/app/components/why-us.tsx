@@ -2,24 +2,32 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { CheckCircle2 } from 'lucide-react';
+import { UsersRound } from 'lucide-react';
+import {Radar} from 'lucide-react';
+import { FastForward } from 'lucide-react';
+import { Split } from 'lucide-react';
 
 const WhyUs = () => {
   const whyUsItems = [
     { 
       title: 'Expert Team', 
-      description: 'Young, dynamic professionals with deep ERPNext expertise' 
+      description: 'Young, dynamic professionals with deep ERPNext expertise',
+      icon: UsersRound 
     }, 
     { 
       title: 'Innovation First', 
-      description: 'Cutting-edge solutions using the latest technologies' 
+      description: 'Cutting-edge solutions using the latest technologies' ,
+      icon: Radar
     }, 
     { 
       title: 'Quick Support', 
-      description: '24/7 support and maintenance for your systems' 
+      description: '24/7 support and maintenance for your systems',
+      icon: FastForward 
     }, 
     { 
       title: 'Custom Solutions', 
-      description: 'Tailored implementations for your specific needs' 
+      description: 'Tailored implementations for your specific needs' ,
+      icon: Split
     }
   ];
 
@@ -75,7 +83,7 @@ const WhyUs = () => {
               className="bg-blue-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-all"
             >
               <div className="flex items-center mb-4">
-                <CheckCircle2 className="w-8 h-8 text-blue-600 mr-3" />
+                <item.icon className="w-8 h-8 text-blue-800 mr-3" />
                 <h3 className="text-xl font-semibold text-gray-900">
                   {item.title}
                 </h3>
