@@ -1,7 +1,6 @@
 'use client';
 import React from 'react';
 import { motion } from 'framer-motion';
-import { CheckCircle2 } from 'lucide-react';
 import { UsersRound } from 'lucide-react';
 import {Radar} from 'lucide-react';
 import { FastForward } from 'lucide-react';
