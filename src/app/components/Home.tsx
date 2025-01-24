@@ -1,7 +1,7 @@
 // src/components/header.tsx
 import Image from 'next/image'
 
-export default function Header() {
+export default function Home() {
   return (
     <header className="flex items-center justify-center pt-20 md:pt-24 pb-16 bg-gradient-to-r from-blue-50 to-indigo-50">
       <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center">

@@ -10,7 +10,10 @@ const Nav = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
-            <span className="text-2xl font-bold text-blue-800  flex">UPSCALENEXT<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#0890f7" d="M17 16V7H8V5h11v11zm-5 5v-9H3v-2h11v11z"/></svg></span>
+            <a href="#">
+            <span  className="text-2xl font-bold text-blue-800  flex">UPSCALENEXT<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#0890f7" d="M17 16V7H8V5h11v11zm-5 5v-9H3v-2h11v11z"/></svg></span>
+
+            </a>
           </div>
           
           {/* Mobile menu button */}
@@ -23,13 +26,13 @@ const Nav = () => {
           {/* Desktop menu */}
           <div className="hidden md:flex space-x-4">
             {['Home', 'About', 'Projects', 'Why Us', 'Contact'].map((item) => (
-              <a
+                <a
                 key={item}
-                href={`#${item.toLowerCase().replace(' ', '-')}`}
+                href={item === 'Home' ? '/' : `#${item.toLowerCase().replace(' ', '-')}`}
                 className="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-blue-600"
-              >
+                >
                 {item}
-              </a>
+                </a>
             ))}
           </div>
         </div>
@@ -41,7 +44,7 @@ const Nav = () => {
               {['Home', 'About', 'Projects', 'Why Us', 'Contact'].map((item) => (
                 <a
                   key={item}
-                  href={`#${item.toLowerCase().replace(' ', '-')}`}
+                  href={item ==='Home'?'/':`#${item.toLowerCase().replace(' ', '-')}`}
                   className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:text-blue-600"
                   onClick={() => setIsOpen(false)}
                 >

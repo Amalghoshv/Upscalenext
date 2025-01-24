@@ -1,4 +1,4 @@
-import Header from '@/app/components/header'
+import HomeComponent from '@/app/components/Home'
 import About from '@/app/components/About'
 import Projects from '@/app/components/projects'
 import WhyUs from '@/app/components/why-us'
@@ -9,7 +9,7 @@ import Services from './components/Services'
 export default function Home() {
   return (
     <>
-      <Header />
+      <HomeComponent />
       <About />
       <Projects />
       <Technologies />
