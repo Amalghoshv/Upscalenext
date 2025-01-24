@@ -14,7 +14,7 @@ export default function Home() {
             and expert consulting services
           </p>
           <button className="bg-blue-800 text-white px-6 md:px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors">
-            Get Started
+            Lets Discuss
           </button>
         </div>
         <div className="w-full md:w-3/10 flex justify-center md:justify-end">
