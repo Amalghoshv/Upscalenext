@@ -69,9 +69,6 @@ const Footer: FC = () => (
         <p className="hover:text-gray-300 transition-colors duration-200">
           Phone: +91 7025732665
         </p>
-        <p className="hover:text-gray-300 transition-colors duration-200">
-          Phone: +91 8943248736
-        </p>
           </div>
         </div>
       </div>
