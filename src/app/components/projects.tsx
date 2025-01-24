@@ -1,10 +1,10 @@
-
 import { FC } from 'react';
 
 interface Project {
   title: string;
   description: string;
   tech: string[];
+  bg: string;
 }
 
 const Projects: FC = () => {
@@ -12,32 +12,38 @@ const Projects: FC = () => {
     {
       title: 'Logistics Management',
       description: 'Managed logistics operations with custom ERPNext modules',
-      tech: ['ERPNext', 'Custom Modules', 'API Integration']
+      tech: ['ERPNext', 'Custom Modules', 'API Integration'],
+      bg:'./logistics.svg'
     },
     {
       title: 'HR & Payroll System with Biometrics',
       description: 'Integrated HR and payroll system with biometric attendance',
-      tech: ['ERPNext', 'HR', 'Payroll', 'Biometrics']
+      tech: ['ERPNext', 'HR', 'Payroll', 'Biometrics'],
+      bg:'./fingerprint.svg'
     },
     {
       title: 'Retail Management System',
       description: 'Developed a custom retail management system for a chain of stores',
-      tech: ['ERPNext', 'Sales', 'Custom Reports']
+      tech: ['ERPNext', 'Sales', 'Custom Reports'],
+      bg:'./retail.svg'
     },
     {
       title: 'KSA ZATCA Integration - Phase 1 & 2',
       description: 'Integrated ERPNext with KSA ZATCA for VAT compliance',
-      tech: ['ERPNext', 'Tax', 'Custom Reports']
+      tech: ['ERPNext', 'Tax', 'Custom Reports'],
+      bg:'./integration.svg'
     },
     {
       title: 'Customized Themes - ERPNext',
       description: 'Developed custom themes for ERPNext for a better user experience',
-      tech: ['ERPNext', 'Theme', 'Customization']
+      tech: ['ERPNext', 'Theme', 'Customization'],
+      bg:'./themes.svg'
     },
     {
       title: 'Property Management System',
       description: 'Developed a custom property management system for a real estate company',
-      tech: ['ERPNext', 'Dashboard', 'Customization']
+      tech: ['ERPNext', 'Dashboard', 'Customization'],
+      bg:'./property.svg'
     }
   ];
 
@@ -49,8 +55,8 @@ const Projects: FC = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-gray-800">
           {projects.map((project, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="group relative bg-white p-6 rounded-lg shadow-md flex flex-col h-full overflow-hidden"
             >
               {/* Bottom animated border */}
@@ -63,18 +69,39 @@ const Projects: FC = () => {
                 <div className="w-full h-full bg-blue-600 transform -translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out" />
               </div>
               
-              {/* Content */}
-              <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
-              <p className="text-gray-600 mb-4 flex-grow">{project.description}</p>
-              <div className="flex flex-wrap gap-2 mt-auto">
-                {project.tech.map((tech, i) => (
-                  <span 
-                    key={i} 
-                    className="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm"
-                  >
-                    {tech}
-                  </span>
-                ))}
+              {/* Content Container */}
+              <div className="relative flex flex-col flex-grow">
+                {/* Background Image with Responsive Styling */}
+                <div 
+                  className="absolute inset-0 bg-no-repeat 
+                             md:bg-right-bottom 
+                             md:bg-[length:47%]
+                             max-md:bg-contain max-md:bg-bottom-right
+                             opacity-50 group-hover:opacity-100 
+                             transition-opacity duration-300 ease-in-out 
+                             mix-blend-multiply" 
+                  style={{
+                    backgroundImage: `url(${project.bg})`,
+                    backgroundPositionX: 'calc(100% - 20px)', // Adjust horizontal position for larger screens
+                    backgroundPositionY: 'calc(100% - 20px)'  // Adjust vertical position for larger screens
+                  }} 
+                />
+                
+                {/* Content with Full Opacity */}
+                <div className="relative z-10 h-full flex flex-col">
+                  <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
+                  <p className="text-gray-600 mb-4 flex-grow">{project.description}</p>
+                  <div className="flex flex-wrap gap-2 mt-auto">
+                    {project.tech.map((tech, i) => (
+                      <span
+                        key={i}
+                        className="px-3 py-1 bg-blue-100 text-blue-600 rounded-full text-sm"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           ))}
