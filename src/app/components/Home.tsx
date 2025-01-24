@@ -33,7 +33,7 @@ export default function Home() {
             whileTap={{ scale: 0.95 }}
             className="bg-blue-800 text-white px-6 md:px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-colors flex items-center justify-center space-x-2"
           >
-            <span>Let's Discuss</span>
+            <span>Let&apos;s Discuss</span>
             <ArrowRight className="ml-2" />
           </motion.button>
         </motion.div>
