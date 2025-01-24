@@ -5,7 +5,7 @@ import { useRef } from 'react';
 
 const About = () => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, amount: 0.2 });
+  const isInView = useInView(ref, { once: true, amount: 0.5 });
 
   const sectionVariants = {
     hidden: { opacity: 0, y: 50 },
