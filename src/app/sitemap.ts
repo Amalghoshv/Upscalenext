@@ -26,6 +26,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: 'monthly',
         priority: 0.8,
       },
-    // Add other pages as needed
+      {
+        url: 'https://www.upscalenext.cloud/services',
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: 0.8,
+      },
   ]
 }

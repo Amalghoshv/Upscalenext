@@ -64,6 +64,7 @@ const Services: React.FC = () => {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.7 }}
       className="py-16 bg-gray-50"
+       id='services'
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div 

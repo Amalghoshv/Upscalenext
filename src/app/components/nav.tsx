@@ -25,7 +25,7 @@ const Nav = () => {
 
           {/* Desktop menu */}
           <div className="hidden md:flex space-x-4">
-            {['Home', 'About', 'Projects', 'Why Us', 'Contact'].map((item) => (
+            {['Home', 'About', 'Projects','Services' ,'Why Us', 'Contact'].map((item) => (
                 <a
                 key={item}
                 href={item === 'Home' ? '/' : `#${item.toLowerCase().replace(' ', '-')}`}
@@ -41,7 +41,7 @@ const Nav = () => {
         {isOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 text-center">
-              {['Home', 'About', 'Projects', 'Why Us', 'Contact'].map((item) => (
+              {['Home', 'About', 'Projects','Services','Why Us','Contact'].map((item) => (
                 <a
                   key={item}
                   href={item ==='Home'?'/':`#${item.toLowerCase().replace(' ', '-')}`}
